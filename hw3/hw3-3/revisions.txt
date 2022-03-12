@@ -1,0 +1,59 @@
+commit 03394eb83d5c0d4973e1297cb4642326f0eaf55a
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Wed Feb 2 11:26:06 2022 -0500
+
+    Program is finished
+
+commit f1b9af631b52f17cc89b7042ce8a0ce87bf126f8
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Tue Feb 1 23:22:44 2022 -0500
+
+    Setting a Decent Viewing Speed
+
+commit b6f511effbd4430b9a4883df0811cf270ebe6c65
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Tue Feb 1 23:15:34 2022 -0500
+
+    Redesigned the neighbors, algorithm works
+
+commit 3e56ab91c2955a774f03f26666998bdcb7de9952
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Tue Feb 1 22:03:23 2022 -0500
+
+    Refactoring to Fix the Algorithm
+
+commit bfc3a67847fc5cdb32bd87ea6de672ce02c45861
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Tue Feb 1 20:28:11 2022 -0500
+
+    Fixed and replaced magic values
+
+commit 0df05e6b7b17d745bb9f40d43e32e750af7e5d6d
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Jan 31 18:18:04 2022 -0500
+
+    Conducted a complete formatting overheaul
+
+commit 5d5fea00e2f0444c0656438d4be49cbc9bfe8db7
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Jan 31 17:29:23 2022 -0500
+
+    Fixed various warnings, no more warnings
+
+commit f5b83ac885521cc0081db0bd7447dd7f85cce18f
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Jan 31 16:48:55 2022 -0500
+
+    Lines 181 and 189 were using '==' instead of '='
+
+commit 7df176966642a30eca98541af37eb6a11ee80045
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Jan 31 16:23:17 2022 -0500
+
+    String format specifier changed from string to char
+
+commit ef5b18150acd61c84fc92059ece115ced309b1ee
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Jan 31 16:08:07 2022 -0500
+
+    Initial baseline commit

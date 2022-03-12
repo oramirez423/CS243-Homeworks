@@ -1,0 +1,122 @@
+fix3 changed the operation of logical equivalence (==) to an assignment
+operator (=)
+
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ make phase2
+gcc -g -ggdb -std=c99 good-life.c -o good-life -lcurses
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ gdb -q good-life
+Reading symbols from good-life...
+(gdb) break 199
+Breakpoint 1 at 0x1b2d: file good-life.c, line 199.
+(gdb) run
+Starting program: /home/stu12/s19/olr8350/Courses/CS243/Homeworks/hw3/act1/good-life 
+
+	..Welcome to the Game of life..
+
+Please enter the initial number of organisms: 123
+
+Breakpoint 1, main () at good-life.c:199
+199						  printw("%c", life[row][col]); // fix2 changed format from s to c
+(gdb) display row
+1: row = 0
+(gdb) display col
+2: col = 0
+(gdb) display life[row][col]
+3: life[row][col] = 0 '\000'
+(gdb) continue
+Continuing.
+
+Breakpoint 1, main () at good-life.c:199
+199						  printw("%c", life[row][col]); // fix2 changed format from s to c
+1: row = 0
+2: col = 1
+3: life[row][col] = 0 '\000'
+(gdb) c
+Continuing.
+
+Breakpoint 1, main () at good-life.c:199
+199						  printw("%c", life[row][col]); // fix2 changed format from s to c
+1: row = 0
+2: col = 2
+3: life[row][col] = 0 '\000'
+(gdb) c
+Continuing.
+
+Breakpoint 1, main () at good-life.c:199
+199						  printw("%c", life[row][col]); // fix2 changed format from s to c
+1: row = 0
+2: col = 3
+3: life[row][col] = 0 '\000'
+(gdb) list
+194				move( 0, 0);
+195					for(row = 0; row<20; row++)
+196			 	{
+197					  for(col = 0; col<20; col++)
+198					  {       
+199						  printw("%c", life[row][col]); // fix2 changed format from s to c
+200					  }
+201					  printw( "\n");
+202			 	}
+203				move( 20, 0);
+(gdb) l
+204				refresh();
+205			  printw("generation: %d\n", count);
+206				count++;
+207				birthRule(life, x, y);
+208				survivalRule(life, x, y);
+209				deathRule(life, x, y);
+210			 }
+211			  
+212		endwin(); // End curses mode at the end of the program
+213		  return 0;
+(gdb) break 204
+Breakpoint 2 at 0x555555555bc0: file good-life.c, line 204.
+(gdb) disable breakpoint 1
+(gdb) info br
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep n   0x0000555555555b2d in main at good-life.c:199
+	breakpoint already hit 4 times
+2       breakpoint     keep y   0x0000555555555bc0 in main at good-life.c:204
+(gdb) continue
+Continuing.
+
+Breakpoint 2, main () at good-life.c:204
+204				refresh();
+1: row = 20
+2: col = 20
+3: life[row][col] = 0 '\000'
+(gdb) next
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ make phase2
+gcc -g -ggdb -std=c99 good-life.c -o good-life -lcurses
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ gdb -q good-life
+Reading symbols from good-life...
+(gdb) run
+Starting program: /home/stu12/s19/olr8350/Courses/CS243/Homeworks/hw3/act1/good-life 
+
+	..Welcome to the Game of life..
+
+Please enter the initial number of organisms: 123
+
+     *     *** **  *
+ *   **   * *** **
+  **  **   ***** **
+  ***  ********** **
+** **** ************
+  ****** ***********
+   ****** **********
+   ******* *********
+  * ******* ********
+   * ***************
+    * **************
+*    ***************
+ *   ***************
+  *   **************
+*  **  *************
+  ****  ************
+ ******  ***********
+* ******  **********
+   ******* *********
+generation: 35043
+Program received signal SIGINT, Interrupt.
+                                          0x00007ffff7f91a68 in ?? () from /lib/x86_64-linux-gnu/libncurses.so.6
+(gdb) 
+

@@ -1,0 +1,40 @@
+commit 6dcfc79141fd0f729b43f287f036d64a086c282c
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Thu Feb 17 16:33:33 2022 -0500
+
+    added documentation highlighting the risks regarding memory allocation
+
+commit 362f8b268f784b44518ca63bb50aa2a43f75c9f0
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Feb 14 23:25:23 2022 -0500
+
+    fixed multiple memory leaks created by malloc() that were not freed
+    in tedtalktest.c:main
+
+commit 7a6e16901144546d070db57bc4f5bee04c4724e3
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Feb 14 22:47:40 2022 -0500
+
+    fixed invalid delete that attempted to free memory more than once in
+    file tedtalktest.c:main:105
+
+commit 73c08fa10f7fc37f4b09545b8164a97fcbd45ab6
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Feb 14 22:23:51 2022 -0500
+
+    fixed invalid write that misallocated memory in file
+    tedtalk.c:tedtalk_copy:118
+    fixed invalid write that missallocated memory in file
+    tedtalk.c:tedtalk_copy:122
+
+commit d48052960d2c8169f2f8af56fed2249199ebc7b5
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Sun Feb 13 17:59:42 2022 -0500
+
+    fixed double free that aborted(core dumped) in tedtalktest.c:main:106
+
+commit 26989d2960ce41eff7261ab9ed507345baf5dca2
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Sun Feb 13 17:12:46 2022 -0500
+
+    Initial Commit

@@ -1,0 +1,374 @@
+==581114== Memcheck, a memory error detector
+==581114== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==581114== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==581114== Command: ./tedtalktest
+==581114== Parent PID: 580878
+==581114== 
+==581114== Invalid write of size 1
+==581114==    at 0x483F0BE: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C17: tedtalk_copy (tedtalk.c:119)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114==  Address 0x4a67ee9 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid write of size 1
+==581114==    at 0x483F0AC: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C47: tedtalk_copy (tedtalk.c:122)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114==  Address 0x4a67f39 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid write of size 1
+==581114==    at 0x483F0BE: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C47: tedtalk_copy (tedtalk.c:122)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114==  Address 0x4a67f4c is 19 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109AB1: tedtalk_get_title (tedtalk.c:75)
+==581114==    by 0x109CCC: tedtalk_to_string (tedtalk.c:145)
+==581114==    by 0x1094FA: main (tedtalktest.c:73)
+==581114==  Address 0x4a67f39 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483F0B2: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109AD8: tedtalk_get_title (tedtalk.c:76)
+==581114==    by 0x109CCC: tedtalk_to_string (tedtalk.c:145)
+==581114==    by 0x1094FA: main (tedtalktest.c:73)
+==581114==  Address 0x4a67f39 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A5D: tedtalk_get_speaker (tedtalk.c:66)
+==581114==    by 0x109CDC: tedtalk_to_string (tedtalk.c:146)
+==581114==    by 0x1094FA: main (tedtalktest.c:73)
+==581114==  Address 0x4a67ee9 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483F0B2: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A83: tedtalk_get_speaker (tedtalk.c:67)
+==581114==    by 0x109CDC: tedtalk_to_string (tedtalk.c:146)
+==581114==    by 0x1094FA: main (tedtalktest.c:73)
+==581114==  Address 0x4a67ee9 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109AB1: tedtalk_get_title (tedtalk.c:75)
+==581114==    by 0x109CCC: tedtalk_to_string (tedtalk.c:145)
+==581114==    by 0x10952E: main (tedtalktest.c:76)
+==581114==  Address 0x4a67f39 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483F0B2: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109AD8: tedtalk_get_title (tedtalk.c:76)
+==581114==    by 0x109CCC: tedtalk_to_string (tedtalk.c:145)
+==581114==    by 0x10952E: main (tedtalktest.c:76)
+==581114==  Address 0x4a67f39 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A5D: tedtalk_get_speaker (tedtalk.c:66)
+==581114==    by 0x109CDC: tedtalk_to_string (tedtalk.c:146)
+==581114==    by 0x10952E: main (tedtalktest.c:76)
+==581114==  Address 0x4a67ee9 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483F0B2: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A83: tedtalk_get_speaker (tedtalk.c:67)
+==581114==    by 0x109CDC: tedtalk_to_string (tedtalk.c:146)
+==581114==    by 0x10952E: main (tedtalktest.c:76)
+==581114==  Address 0x4a67ee9 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483F0B2: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C17: tedtalk_copy (tedtalk.c:119)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114==  Address 0x4a67ee9 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid write of size 1
+==581114==    at 0x483F0BE: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C17: tedtalk_copy (tedtalk.c:119)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114==  Address 0x4a68249 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483F0B2: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C47: tedtalk_copy (tedtalk.c:122)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114==  Address 0x4a67f39 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid write of size 1
+==581114==    at 0x483F0AC: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C47: tedtalk_copy (tedtalk.c:122)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114==  Address 0x4a68299 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114== 
+==581114== Invalid write of size 1
+==581114==    at 0x483F0BE: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C47: tedtalk_copy (tedtalk.c:122)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114==  Address 0x4a682ac is 19 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483FEE8: strcmp (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109B8B: tedtalk_equals (tedtalk.c:102)
+==581114==    by 0x10956D: main (tedtalktest.c:82)
+==581114==  Address 0x4a67ee9 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483FEF0: strcmp (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109B8B: tedtalk_equals (tedtalk.c:102)
+==581114==    by 0x10956D: main (tedtalktest.c:82)
+==581114==  Address 0x4a68249 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483FEE8: strcmp (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BAA: tedtalk_equals (tedtalk.c:103)
+==581114==    by 0x10956D: main (tedtalktest.c:82)
+==581114==  Address 0x4a67f39 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483FEF0: strcmp (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BAA: tedtalk_equals (tedtalk.c:103)
+==581114==    by 0x10956D: main (tedtalktest.c:82)
+==581114==  Address 0x4a68299 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109AB1: tedtalk_get_title (tedtalk.c:75)
+==581114==    by 0x109CCC: tedtalk_to_string (tedtalk.c:145)
+==581114==    by 0x10957D: main (tedtalktest.c:83)
+==581114==  Address 0x4a67f39 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483F0B2: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109AD8: tedtalk_get_title (tedtalk.c:76)
+==581114==    by 0x109CCC: tedtalk_to_string (tedtalk.c:145)
+==581114==    by 0x10957D: main (tedtalktest.c:83)
+==581114==  Address 0x4a67f39 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A5D: tedtalk_get_speaker (tedtalk.c:66)
+==581114==    by 0x109CDC: tedtalk_to_string (tedtalk.c:146)
+==581114==    by 0x10957D: main (tedtalktest.c:83)
+==581114==  Address 0x4a67ee9 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483F0B2: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A83: tedtalk_get_speaker (tedtalk.c:67)
+==581114==    by 0x109CDC: tedtalk_to_string (tedtalk.c:146)
+==581114==    by 0x10957D: main (tedtalktest.c:83)
+==581114==  Address 0x4a67ee9 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109AB1: tedtalk_get_title (tedtalk.c:75)
+==581114==    by 0x109CCC: tedtalk_to_string (tedtalk.c:145)
+==581114==    by 0x10958D: main (tedtalktest.c:84)
+==581114==  Address 0x4a68299 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483F0B2: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109AD8: tedtalk_get_title (tedtalk.c:76)
+==581114==    by 0x109CCC: tedtalk_to_string (tedtalk.c:145)
+==581114==    by 0x10958D: main (tedtalktest.c:84)
+==581114==  Address 0x4a68299 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A5D: tedtalk_get_speaker (tedtalk.c:66)
+==581114==    by 0x109CDC: tedtalk_to_string (tedtalk.c:146)
+==581114==    by 0x10958D: main (tedtalktest.c:84)
+==581114==  Address 0x4a68249 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114== 
+==581114== Invalid read of size 1
+==581114==    at 0x483F0B2: strcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A83: tedtalk_get_speaker (tedtalk.c:67)
+==581114==    by 0x109CDC: tedtalk_to_string (tedtalk.c:146)
+==581114==    by 0x10958D: main (tedtalktest.c:84)
+==581114==  Address 0x4a68249 is 0 bytes after a block of size 9 alloc'd
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114== 
+==581114== Invalid free() / delete / delete[] / realloc()
+==581114==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A06: tedtalk_delete (tedtalk.c:53)
+==581114==    by 0x109686: main (tedtalktest.c:105)
+==581114==  Address 0x4a67ee0 is 0 bytes inside a block of size 9 free'd
+==581114==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A06: tedtalk_delete (tedtalk.c:53)
+==581114==    by 0x1095DF: main (tedtalktest.c:93)
+==581114==  Block was alloc'd at
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BF4: tedtalk_copy (tedtalk.c:118)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== Invalid free() / delete / delete[] / realloc()
+==581114==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A16: tedtalk_delete (tedtalk.c:55)
+==581114==    by 0x109686: main (tedtalktest.c:105)
+==581114==  Address 0x4a67f30 is 0 bytes inside a block of size 9 free'd
+==581114==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109A16: tedtalk_delete (tedtalk.c:55)
+==581114==    by 0x1095DF: main (tedtalktest.c:93)
+==581114==  Block was alloc'd at
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109C21: tedtalk_copy (tedtalk.c:121)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== 
+==581114== HEAP SUMMARY:
+==581114==     in use at exit: 597 bytes in 16 blocks
+==581114==   total heap usage: 60 allocs, 46 frees, 2,424 bytes allocated
+==581114== 
+==581114== 24 bytes in 1 blocks are definitely lost in loss record 4 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x10995F: new_TEDtalk (tedtalk.c:35)
+==581114==    by 0x1092B9: main (tedtalktest.c:33)
+==581114== 
+==581114== 24 bytes in 1 blocks are definitely lost in loss record 5 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x10995F: new_TEDtalk (tedtalk.c:35)
+==581114==    by 0x10949A: main (tedtalktest.c:66)
+==581114== 
+==581114== 24 bytes in 1 blocks are definitely lost in loss record 6 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BE6: tedtalk_copy (tedtalk.c:116)
+==581114==    by 0x1094EA: main (tedtalktest.c:72)
+==581114== 
+==581114== 24 bytes in 1 blocks are definitely lost in loss record 7 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109BE6: tedtalk_copy (tedtalk.c:116)
+==581114==    by 0x109556: main (tedtalktest.c:81)
+==581114== 
+==581114== 56 bytes in 1 blocks are definitely lost in loss record 9 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109D49: tedtalk_to_string (tedtalk.c:158)
+==581114==    by 0x1094C2: main (tedtalktest.c:69)
+==581114== 
+==581114== 56 bytes in 1 blocks are definitely lost in loss record 10 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109D49: tedtalk_to_string (tedtalk.c:158)
+==581114==    by 0x1094FA: main (tedtalktest.c:73)
+==581114== 
+==581114== 56 bytes in 1 blocks are definitely lost in loss record 11 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109D49: tedtalk_to_string (tedtalk.c:158)
+==581114==    by 0x10952E: main (tedtalktest.c:76)
+==581114== 
+==581114== 56 bytes in 1 blocks are definitely lost in loss record 12 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109D49: tedtalk_to_string (tedtalk.c:158)
+==581114==    by 0x10957D: main (tedtalktest.c:83)
+==581114== 
+==581114== 58 bytes in 1 blocks are definitely lost in loss record 13 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109D49: tedtalk_to_string (tedtalk.c:158)
+==581114==    by 0x109329: main (tedtalktest.c:42)
+==581114== 
+==581114== 62 bytes in 1 blocks are definitely lost in loss record 14 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109D49: tedtalk_to_string (tedtalk.c:158)
+==581114==    by 0x109602: main (tedtalktest.c:96)
+==581114== 
+==581114== 69 bytes in 1 blocks are definitely lost in loss record 15 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x109D49: tedtalk_to_string (tedtalk.c:158)
+==581114==    by 0x109364: main (tedtalktest.c:46)
+==581114== 
+==581114== 88 (24 direct, 64 indirect) bytes in 1 blocks are definitely lost in loss record 16 of 16
+==581114==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==581114==    by 0x10995F: new_TEDtalk (tedtalk.c:35)
+==581114==    by 0x1095F2: main (tedtalktest.c:95)
+==581114== 
+==581114== LEAK SUMMARY:
+==581114==    definitely lost: 533 bytes in 12 blocks
+==581114==    indirectly lost: 64 bytes in 4 blocks
+==581114==      possibly lost: 0 bytes in 0 blocks
+==581114==    still reachable: 0 bytes in 0 blocks
+==581114==         suppressed: 0 bytes in 0 blocks
+==581114== 
+==581114== For lists of detected and suppressed errors, rerun with: -s
+==581114== ERROR SUMMARY: 287 errors from 42 contexts (suppressed: 0 from 0)

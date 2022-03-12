@@ -1,0 +1,8 @@
+Courses/CS243/
+├── Homeworks
+│   ├── hw1
+│   └── hw2
+└── Projects
+    └── project1
+
+5 directories, 0 files

@@ -1,0 +1,18 @@
+My home path is: /home/stu12/s19/olr8350
+Files in my HOME:
+total 128
+drwx------ 3 olr8350 students      3 Sep  4  2013 Library
+drwxr-xr-x 2 olr8350 students      3 Aug 20 06:40 mail
+-rw------- 1 olr8350 students 123144 Aug 20 06:40 cs_account_info.pdf
+drwxr-xr-x 2 olr8350 students      3 Aug 20 06:40 public_html
+drwx------ 3 olr8350 students      3 Jan 13 10:14 courses
+drwx------ 3 olr8350 students      4 Jan 20 21:08 Courses
+drwx------ 3 olr8350 students      3 Jan 20 21:40 tmp1877253
+drwx------ 3 olr8350 students      3 Jan 20 22:41 tmp1889557
+My tmp folder: tmp1889587: Courses tmp1889587/Courses: cs243 tmp1889587/Courses/cs243:
+
+Translation steps: Preprocessing, compilation, assembly, and linking
+Warning flags required for gcc in this course: -Wall -Wextra -pedantic
+C dialect flags required for gcc in this course: -std=c99
+Debug flags required for gcc in this course: -ggdb
+LoginId: whoami

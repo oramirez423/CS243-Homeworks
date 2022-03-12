@@ -1,0 +1,29 @@
+commit 0df05e6b7b17d745bb9f40d43e32e750af7e5d6d
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Jan 31 18:18:04 2022 -0500
+
+    Conducted a complete formatting overheaul
+
+commit 5d5fea00e2f0444c0656438d4be49cbc9bfe8db7
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Jan 31 17:29:23 2022 -0500
+
+    Fixed various warnings, no more warnings
+
+commit f5b83ac885521cc0081db0bd7447dd7f85cce18f
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Jan 31 16:48:55 2022 -0500
+
+    Lines 181 and 189 were using '==' instead of '='
+
+commit 7df176966642a30eca98541af37eb6a11ee80045
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Jan 31 16:23:17 2022 -0500
+
+    String format specifier changed from string to char
+
+commit ef5b18150acd61c84fc92059ece115ced309b1ee
+Author: Omar L Ramirez Chio <olr8350@cs.rit.edu>
+Date:   Mon Jan 31 16:08:07 2022 -0500
+
+    Initial baseline commit

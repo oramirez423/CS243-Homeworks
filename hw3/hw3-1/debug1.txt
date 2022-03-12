@@ -1,0 +1,101 @@
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ make phase1
+gcc -Wno-format -g -ggdb -std=c99 good-life.c -o good-life -lcurses
+good-life.c: In function ‘survivalRule’:
+good-life.c:50:22: warning: comparison between pointer and integer
+   50 |    if( life[row][col]== "*")
+      |                      ^~
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ vi good-life.c
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ vi good-life.c
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ make phase1
+gcc -Wno-format -g -ggdb -std=c99 good-life.c -o good-life -lcurses
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ gdb -q good-life
+Reading symbols from good-life...
+(gdb) run
+Starting program: /home/stu12/s19/olr8350/Courses/CS243/Homeworks/hw3/act1/good-life 
+
+	..Welcome to the Game of life..
+
+Please enter the initial number of organisms: 123
+
+Program received signal SIGSEGV, Segmentation fault.
+                                                    __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+(gdb) where
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff7dd1e95 in __vfprintf_internal (s=s@entry=0x7fffffffe330, 
+    format=format@entry=0x555555556063 "%s", ap=ap@entry=0x7fffffffe4f0, 
+    mode_flags=mode_flags@entry=2) at vfprintf-internal.c:1688
+#2  0x00007ffff7de511a in __vsnprintf_internal (string=0x5555555645d0 "", 
+    maxlen=<optimized out>, format=0x555555556063 "%s", args=0x7fffffffe4f0, 
+    mode_flags=2) at vsnprintf.c:114
+#3  0x00007ffff7f91a64 in ?? () from /lib/x86_64-linux-gnu/libncurses.so.6
+#4  0x00007ffff7f8be05 in vwprintw ()
+   from /lib/x86_64-linux-gnu/libncurses.so.6
+#5  0x00007ffff7f8beed in printw () from /lib/x86_64-linux-gnu/libncurses.so.6
+#6  0x0000555555555b72 in main () at good-life.c:199
+(gdb) frame 6
+#6  0x0000555555555b72 in main () at good-life.c:199
+199						  printw("%s", life[row][col]);
+(gdb) list
+194				move( 0, 0);
+195					for(row = 0; row<20; row++)
+196			 	{
+197					  for(col = 0; col<20; col++)
+198					  {
+199						  printw("%s", life[row][col]);
+200					  }
+201					  printw( "\n");
+202			 	}
+203				move( 20, 0);
+(gdb) break 199
+Breakpoint 1 at 0x555555555b2d: file good-life.c, line 199.
+(gdb) info break
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000555555555b2d in main at good-life.c:199
+(gdb) break
+Breakpoint 2 at 0x555555555b72: file good-life.c, line 197.
+(gdb) delete breakpoint 2
+(gdb) info break
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000555555555b2d in main at good-life.c:199
+
+(gdb) run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/stu12/s19/olr8350/Courses/CS243/Homeworks/hw3/act1/good-life 
+
+	..Welcome to the Game of life..
+
+Please enter the initial number of organisms: 123
+
+Breakpoint 1, main () at good-life.c:199
+199						  printw("%s", life[row][col]);
+(gdb) info break
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000555555555b2d in main at good-life.c:199
+	breakpoint already hit 1 time
+(gdb) display row
+1: row = 0
+(gdb) display col
+2: col = 0
+(gdb) whatis life
+type = char [20][20]
+(gdb) display life[row][col]
+3: life[row][col] = 0 '\000'
+(gdb) continue 15
+Will ignore next 14 crossings of breakpoint 1.  Continuing.
+
+Program received signal SIGSEGV, Segmentation fault.
+                                                    __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 1324496] will be killed.
+
+Quit anyway? (y or n) y
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ vi good-life.c
+olr8350@queeg:~/Courses/CS243/Homeworks/hw3/act1$ make phase1
+gcc -Wno-format -g -ggdb -std=c99 good-life.c -o good-life -lcurses
+ 
+
